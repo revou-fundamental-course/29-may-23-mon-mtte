@@ -220,6 +220,9 @@ h3 {
 form {
     
 }
+input[type="text"] {
+    width: 530px;
+}
 .form-output {
 
 }
