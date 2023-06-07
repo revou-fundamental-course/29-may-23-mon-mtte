@@ -128,41 +128,8 @@
                 </div>
                 <div class="footer-section">
                     <h3>Contact</h3>
-                    <div id="message-us-section" class="message-us">
-                        <form action="">
-                            <table>
-                                <tr>
-                                    <td>Nama</td>
-                                    <td>:</td>
-                                    <td><input id="input-nama" type="text" name="nama"></td>
-                                </tr>
-                                <tr>
-                                    <td>Tanggal Lahir</td>
-                                    <td>:</td>
-                                    <td><input type="date" name="tanggal-lahir"></td>
-                                </tr>
-                                <tr>
-                                    <td>Jenis Kelamin</td>
-                                    <td>:</td>
-                                    <td>
-                                       <input type="radio" name="gender" value="Laki-Laki">Laki-laki</input>
-                                       <br>
-                                       <input type="radio" name="gender" value="Perempuan">Perempuan</input>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Pesan</td>
-                                    <td>:</td>
-                                    <td>
-                                        <textarea name="pesan"></textarea>
-                
-                                    </td>
-                                </tr>
-                            </table>
-                            <button id="kirim">Submit</button>
-                
-                        </form>
-                    </div>
+                    <p>08900000000</p> 
+                    <p>037 334455</p>                   
                 </div>
                 <div class="footer-section">
                     <h3>Social</h3>
@@ -171,7 +138,47 @@
             </div>
         </div>
     </div>
+
+    <!-- Message Us -->
+    <h3>Message Us</h3>
+    <main class="main-content">
+    <div class="form-section">
+        
+        <br />
+        <form name="message-form" onsubmit="return validateForm()">
+            Nama :
+            <input placeholder="Nama" type="text" name="full-name"/>
+            <br />
+
+            Tanggal Lahir :
+            <input type="date" name="birth-date" />
+            <br />
+
+            Jenis kelamin:
+            <input type="radio" id="male" name="gender" value="Pria" />
+            <label for="male">Pria</label>
+            <input type="radio" id="female" name="gender" value="Perempuan" />
+            <label for="female">Perempuan</label>
+            <br />
     
+            Pesan:
+            <textarea placeholder="Pesan" name="messages"></textarea>
+            <br />
+    
+            <input type="submit" value="Submit"/>
+
+        </form>
+        <div class="form-output">
+            <p>Nama: <span id="sender-full-name"></span></p>
+            <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+            <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+            <p>Pesan: <span id="sender-messages"></span></p>
+        </div>
+    </div>
+    </main>
+        
+    
+
     <div id="copyright">
         <div class="wrapper">
             &copy; 2023. <b>MOON Commpany</b> All Rights Reserved.
